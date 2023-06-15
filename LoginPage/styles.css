@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.mainLogin {
+    background: #29292c;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.ladoEsquerdo {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.ladoDireito {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    
+
+}
+
+.cardLogin {
+    width: 60%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: dimgray;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056; 
+}
+
+.ladoEsquerdo > h1 {
+    color: #d6d66f;
+    font-size: 3vw;
+}
+
+.cardLogin > h1 {
+    color: #d6d66f;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textField {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textField > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #29292c;
+    color: bbisque;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textField > label {
+    color: bisque;
+    margin-bottom: 10px;
+}
+
+.textField > input::placeholder {
+    color: blanchedalmond;
+}
+
+.botao {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: rgb(211, 211, 49);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgba(255, 255, 0, 0.767);
+}
+
+.imagem-esquerda {
+    width: 35vw;
+}
+
+@media only screen and (max-width: 950px){
+    .cardLogin{
+        width: 85%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .mainLogin{
+        flex-direction: column;
+    }
+
+    .ladoEsquerdo > h1 {
+        display: none;
+    }
+    .ladoEsquerdo {
+        width: 100%;
+        height: auto;
+    }
+
+    .ladoDireito {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagem-esquerda {
+        width: 50vw;
+    }
+
+    .cardLogin {
+        width: 90%;
+    }
+}
